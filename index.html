@@ -10,16 +10,19 @@
 
 </head>
 <body>
-	<div class="jumbotron">Star Wars!</div>
+	<div class="jumbotron text-center"><h1>Star Wars!<hr><div id="win-loss"></div></h1></div>
+	<hr>
+
 	
 	<div class="row container-fluid" id="row1">
-		<div class="col-sm-6 container-fluid">
-			<img src="#" class="img-fluid" id="bobaFett" alt="Boba Fett">
-			<img src="#" class="img-fluid" id="darthVader" alt="Darth Vader">
-			<img src="#" class="img-fluid" id="hanSolo" alt="Han Solo">
-			<img src="#" class="img-fluid" id="jarJarBinks" alt="Jar Jar Binks">
+		<div class="col-sm-6 container-fluid" id="characterSelection">
+			<h2 class="text-center" id="chooseChar">Choose your character</h2>
+			<img src="http://vignette4.wikia.nocookie.net/starwars/images/7/79/Boba_Fett_HS_Fathead.png/revision/latest?cb=20161114160631" class="img-fluid img-thumbnail col-sm-3" id="bobaFett" alt="Boba Fett">
+			<img src="https://i.pinimg.com/736x/23/69/60/236960ec5800a56e2b6fab97441dd691--darth-bader-the-script.jpg" class="img-fluid img-thumbnail col-sm-3" id="darthVader" alt="Darth Vader">
+			<img src="https://upload.wikimedia.org/wikipedia/en/b/be/Han_Solo_depicted_in_promotional_image_for_Star_Wars_%281977%29.jpg" class="img-fluid img-thumbnail col-sm-3" id="hanSolo" alt="Han Solo">
+			<img src="https://upload.wikimedia.org/wikipedia/en/4/4b/Jjportrait.jpg" class="img-fluid img-thumbnail col-sm-3" id="jarJarBinks" alt="Jar Jar Binks">
 
-			<h4>Defeated: <span id="defeatedId"></span></h4>
+			<h4 class="border border-warning rounded m-3 p-3 text-center">Defeated characters: <span id="defeatedId"></span></h4>
 
 		</div>
 
@@ -31,7 +34,7 @@
 			<h3 id="enemyChar">Your oppenent here</h3>
 			<h5>HP: <span id="enemyCharHP"></span></h5>
 			<h5>Atk: <span id="enemyCharAtk"></span></h5>
-			<button id="attackId" type="button" class="btn btn-danger">Attack</button>
+			<button id="attackId" type="button" class="btn btn-danger disabled">Attack</button>
 		</div>
 	</div>		
 
