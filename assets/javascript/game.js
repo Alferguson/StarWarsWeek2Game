@@ -39,13 +39,13 @@ $(document).ready(function(){
 		$("#enemyCharHP").html("");
 		enemyCharAtk = "";
 		$("#enemyCharAtk").html("");
-		$("#win-loss").html("<h1>Sorry but you lost big time</h1>");
+		$("#win-loss").html("<h1>Sorry but you lost big time, please refresh page to play again</h1>");
 	}
 
 	// game win function
 	gameWin = function () {
 		
-		$("#win-loss").html("<h1>Eyyyyy, you won</h1>");
+		$("#win-loss").html("<h1>Eyyyyy, you won, please refresh page to play again</h1>");
 	}
 
 	// When image is clicked, start the game 
